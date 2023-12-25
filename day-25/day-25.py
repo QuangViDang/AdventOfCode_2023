@@ -25,7 +25,7 @@ def main():
         input_data = file.read()
 
     result_part_a = solve_a(input_data)
-    print(f"Part A Result: {result_part_a}")
+    print(f"Result: {result_part_a}")
 
 
 if __name__ == "__main__":
