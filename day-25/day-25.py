@@ -1,5 +1,3 @@
-"""solution of adv_2023_25"""
-
 import math
 import networkx
 
@@ -20,4 +18,15 @@ def solve_a(in_str: str) -> int:
     graph.remove_edges_from(edges_to_remove)
     components = list(networkx.connected_components(graph))
     return math.prod(len(_) for _ in components)
-solve_a()
+
+
+def main():
+    with open("input.txt", "r") as file:
+        input_data = file.read()
+
+    result_part_a = solve_a(input_data)
+    print(f"Part A Result: {result_part_a}")
+
+
+if __name__ == "__main__":
+    main()
